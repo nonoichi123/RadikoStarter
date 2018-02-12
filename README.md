@@ -1,0 +1,2 @@
+# RadikoStarter
+Radikoでラジオを自動再生するプログラム
