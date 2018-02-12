@@ -10,35 +10,35 @@ php 7.1.7
 Selenium Server Standalone 3.9.1
 GoogleChrome 63.0
 
-## 利用するツール
+##　利用するツール
 
 GoogleChrome
 Terminal
 iCal
 Automator
 
-## セットアップ手順
+##　セットアップ手順
 
 ### ソース取得と初期設定
 
-適当な場所で、ソースをcloneする
+1. 適当な場所で、ソースをcloneする
 
 ※　初期状態は、/Users/[ユーザ名]/Documents/Develop/RadikoStarter　配下に実行ファイルを設置する
 
-radikoStarter.sh ７行目を編集
+2. radikoStarter.sh ７行目を編集
 →　ソースの設置ディレクトリのパスに変更
 
-kicker.php　１５行目を編集
+3. kicker.php　１５行目を編集
 →　自動再生させたいラジオ局のURLに変更
 ※　初期状態は、MBSになっている
 
-kicker.php　2５行目を編集
+4. kicker.php　2５行目を編集
 →　再生時間を変更
 ※　初期状態は、２時間経過後に再生が終了するようになっている
 
 ### ライブラリインストール
 
-Terminalを起動
+1. Terminalを起動
 
 Composer がインストールされていない方は、以下のコマンドを実行して、Composerインストール作業を初めに行うこと
 
@@ -46,7 +46,7 @@ Composer がインストールされていない方は、以下のコマンド�
 curl -sS https://getcomposer.org/installer | php
 ```
 
-ライブラリをインストール
+2. ライブラリをインストール
 
 ```
 composer.phar install
@@ -54,13 +54,13 @@ composer.phar install
 
 ###　動作確認
 
-Terminalで、ソースの設置ディレクトリに移動後、以下コマンドを実行する
+1. Terminalで、ソースの設置ディレクトリに移動後、以下コマンドを実行する
 
 ```
 sh radikoStarter.sh
 ```
 
-GoogleChromeが自動起動され、自動再生が始まることを確認する
+2. GoogleChromeが自動起動され、自動再生が始まることを確認する
 
-### タイマー起動設定
+###　タイマー起動設定
 
